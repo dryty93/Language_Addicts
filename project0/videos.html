@@ -1,0 +1,193 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>
+      LanguageAddicts
+    </title>
+      <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+    <div class="top">
+    <h1>Language Addicts</h1>
+    </div>
+<body class="hold">
+
+    <div id="main_content">
+        <div class="col-sm-6 col-lg-12">
+            <nav class="nav nav-pills nav-stacked">
+        <div class="row">
+              <div class="col-sm">
+        <ul class="first">
+            <li>
+                <a href="index.html"/>Home</a>
+            </li>
+        </ul>
+            <div class="col-sm-6 col-lg-12">
+         <ul>
+            <li>
+                <a href="videos.html"/>Videos</a>
+            </li>
+        </ul>
+        </div>
+            <div class="col-sm-6 col-lg-12">
+         <ul>
+            <li>
+                <a href="phil.html"/>Cognates</a>
+            </li>
+        </ul>
+        </div>
+        <div class="col-sm-6 col-lg-12">
+        <ul>
+            <li>
+                <a href="contact_form.html"/>Contact</a>
+            </li>
+        </ul></div>
+                  </div>
+        </div>
+            </nav>
+
+        </div>
+
+    </div>
+
+<hr>
+    <div class="video_container">
+                <h6>En ese entonces se hablaba un solo idioma en toda la tierra.</h6>
+
+                <img src="spain_flag.jpg" class="span" alt="Spain Flag" width="50">
+        <div class="row">
+        <div class="col-xs-2 col-s-4 col-lg-4">
+        <h2>
+            Spanish Videos
+        </h2>
+        </div>
+            <div class="col-xs-2 col-s-4 col-lg-4 height=100%">
+                <div class="first_video">
+
+
+        <iframe width="100%"  src="https://www.youtube.com/embed/eCEKSXK7YaI" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <br>
+                <p3>Title: Pobreza</p3>
+                 <br>
+                 <p3>Artist: Kafu Banton</p3>
+            <br>
+            <a href="///C:/Users/dryde/Desktop/week0_cs50_code/project0/pobreza_letras.html"><p3>Click Me For Lyrics @</p3></a>
+                </div>
+                </div>
+
+
+             <div class="col-xs-2 col-s-4 col-lg-4 height=100%">
+
+
+        <iframe width="100%" src="https://www.youtube.com/embed/KiPy0OaxWIw" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                 <br>
+
+                 <p3>Title: Tranqui</p3>
+                 <br>
+                 <p3>Artist: Newton</p3>
+                 <br>
+                 <a href="http://versosperfectos.com/canciones/newton-tranqui"><p3>Click Me For Lyrics @</p3></a>
+                </div>
+            <br>
+
+             </div>
+                <img src="french_flag.jpg" class="french" alt="French Flag" width="50" >
+                <br>
+            <h6>Mais il arriva qu'étant partis d'Orient, ils trouvèrent une campagne au pays de Sinhar, où ils habitèrent.</h6>
+
+        <div class="row">
+        <div class="col-xs-2 col-s-4 col-lg-4">
+        <h2>
+            French Videos
+        </h2>
+        </div>
+             <div class="col-xs-2 col-s-4 col-lg-4 height=100%">
+
+
+        <iframe width="100%" src="https://www.youtube.com/embed/VUq11wA1oDM"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                 <br>
+
+                 <p3>Title: ArAfricain</p3>
+                 <br>
+                 <p3>Artist: Sofiane Ft. Maitre Gimms</p3>
+        </div>
+             <div class="col-xs-2 col-s-4 col-lg-4">
+         <iframe width="100%"  src="https://www.youtube.com/embed/7IxphuFCH7I"
+                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                  <br>
+
+                 <p3>Title: Chacun Sa Vie</p3>
+                 <br>
+                 <p3>Artist: Baby G</p3>
+        </div>
+        </div>
+        <hr>
+
+
+
+
+
+
+</div>
+
+</body>
+<script>
+$(document).ready(function(){
+
+ $("p3,h6,h2").mouseenter(function(){
+    $(this).css("color", "gold");
+    $(this).css("background-color", "black");
+});
+
+    $("p3,h6,h2").mouseleave(function(){
+    $(this).css("color", "black");
+    $(this).css("background-color", "white");
+
+});
+
+
+    $("h1").mouseenter(function(){
+    $(this).css("color", "skyblue");
+
+
+});
+
+ $("h1").mouseleave(function(){
+    $(this).css("color", "white");
+    $(this).css("background-color", "black");
+
+
+});
+
+
+
+$("iframe").mouseleave(function(){
+    $(this).css("width", "100%");
+    $(this).css("height", "50%");
+});
+$("img").mouseleave(function(){
+    $(this).hide(1500).show(1500);
+});
+
+$(".span").click(function() {
+
+    $(this).show(1500);
+    window.location.href='C:/Users/dryde/Desktop/week0_cs50_code/project0/spanish.html';
+
+});
+
+});
+</script>
+<footer class="footer">
+    <hr>
+        <p>Copyright 2018 &copyDryden.inc</p>
+
+</footer>
+
+</html>
